@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "corsheaders",
     # Local
-    "todos.apps.TodosConfig",
+    # "todos.apps.TodosConfig",
 ]
 
 MIDDLEWARE = [
