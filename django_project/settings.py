@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     "rest_framework",
     "corsheaders",
     # Local
-    # "todos.apps.TodosConfig",
+    "accounts.apps.AccountsConfig",
+    "posts.apps.PostsConfig"
 ]
 
 MIDDLEWARE = [
@@ -83,6 +84,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "django_project.wsgi.application"
+
+AUTH_USER_MODEL = "accounts.CustomUser"
 
 
 # Database
