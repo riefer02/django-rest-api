@@ -47,8 +47,6 @@ INSTALLED_APPS = [
     # Third Party,
     "rest_framework",
     # Local
-    "books.apps.BooksConfig",
-    "apis.apps.ApisConfig",
     "todos.apps.TodosConfig",
 ]
 
