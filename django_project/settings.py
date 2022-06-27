@@ -54,7 +54,7 @@ INSTALLED_APPS = [
     "allauth.socialaccount",
     "dj_rest_auth",
     "dj_rest_auth.registration",
-    # "drf_spectacular",
+    "drf_spectacular",
     # Local
     "accounts.apps.AccountsConfig",
     "posts.apps.PostsConfig",
@@ -169,17 +169,14 @@ REST_FRAMEWORK = {
         "rest_framework.authentication.SessionAuthentication",
         "rest_framework.authentication.TokenAuthentication",
     ],
-    # "DEFAULT_SCHEMA_CLASS": [
-    #     "drf_spectacular.openapi.AutoSchema",
-    # ],
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
 }
 
 CORS_ALLOWED_ORIGINS = ("http://localhost:3000", "https://localhost:8000")
 CSRF_TRUSTED_ORIGINS = ["http://localhost:3000"]
 
-# SPECTACULAR_SETTINGS = {
-#     "TITLE": "Rief Productions API",
-#     "DESCRIPTION": "An API for Rief Productions",
-#     "VERSION": "1.0.0",
-#     # Other Settings
-# }
+SPECTACULAR_SETTINGS = {
+    "TITLE": "Rief Productions API",
+    "DESCRIPTION": "An API for Rief Productions",
+    "VERSION": "1.0.0",
+}
