@@ -11,6 +11,8 @@ django-environ = "*"
 whitenoise = "*"
 gunicorn = "*"
 django-cors-headers = "*"
+dj-rest-auth = "*"
+django-allauth = "*"
 
 [dev-packages]
 
